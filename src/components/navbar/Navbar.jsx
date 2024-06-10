@@ -21,22 +21,6 @@ function Navbar() {
         }
     });
 
-    document.addEventListener('scroll', function() {
-        const sections = document.querySelectorAll('section'); // Assuming sections are used for each content section
-        const scrollPosition = window.scrollY;
-    
-        sections.forEach(section => {
-            const anchorId = section.id;
-            const anchor = document.querySelector(`a[href="#${anchorId}"]`);
-    
-            if (section.offsetTop <= scrollPosition && section.offsetTop + section.offsetHeight > scrollPosition) {
-                anchor.classList.add('active');
-            } else {
-                anchor.classList.remove('active');
-            }
-        });
-    });
-
     return (
         <nav className='navbar'>
             <div className="logo"><img src="assets/A.png" alt="logo" />
