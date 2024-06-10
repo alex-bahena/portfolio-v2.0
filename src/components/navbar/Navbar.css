@@ -4,6 +4,12 @@ nav {
     grid-template-columns: 1fr repeat(3, 100px)  30% auto;
     padding: 1rem 0;
     overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white; /* Add background color if needed */
+    z-index: 999; 
 }
 
 nav > div{
@@ -70,6 +76,8 @@ nav .active{
         }
 
     nav .logo{
+        margin: 0;
+        padding: 0 1rem;
         display: block;
         text-align: start;
     }
@@ -86,7 +94,7 @@ nav .hamburger-menu{
     font-size: 2rem;
     color: var(--color-dark);
     margin-right: 1rem;
-    margin-top: 1rem;
+    margin-top: .5rem;
 }
 nav .nav-web{
 display: none;
@@ -95,7 +103,7 @@ nav .nav-item-5{
     margin-right: 0;
 }
 nav .nav-mobile{
-    z-index: 1;
+    z-index: 3;
     grid-column-start: 2;
     justify-content: end;
     text-align: end;
