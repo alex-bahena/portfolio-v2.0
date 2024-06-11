@@ -1,4 +1,4 @@
-section{
+.hero{
 height: 100vh;
 display: grid;
 grid-template-columns: 1fr;
@@ -11,14 +11,14 @@ background-color: var(--color-white);
 
 }
 
-div{
+.hero .hero-content{
     margin: 0;
     padding: 0;
     width: 100%;
     display: grid
 }
 
-section div h2{
+.hero div h2{
     color: var(--color-dark);
     font-size: 2rem;
 }
@@ -38,7 +38,7 @@ section div h2{
 
 
 @media screen and (max-width: 768px){
-    section div h2{
+    .hero div h2{
         font-size: 1.8rem;
     }
   section div p{

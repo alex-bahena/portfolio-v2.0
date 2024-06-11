@@ -10,13 +10,13 @@ function Navbar() {
     
     {/* event handling logic to add className='active' to anchor elements on the navbar */}
     document.addEventListener('click', function (event) {
-        const clickedElement = event.target.closest('a'); // Find the closest anchor element
-        if (clickedElement) { // If an anchor element was clicked
-            event.preventDefault(); // Prevent the default behavior
-            const activeElements = document.querySelectorAll('a.active'); // Get all elements with 'active' class
-            if (!clickedElement.classList.contains('active')) { // If the clicked element doesn't have 'active' class
-                activeElements.forEach(element => element.classList.remove('active')); // Remove 'active' class from all elements
-                clickedElement.classList.add('active'); // Add 'active' class to the clicked element
+        const clickedElement = event.target.closest('a'); 
+        if (clickedElement) { 
+            event.preventDefault(); 
+            const activeElements = document.querySelectorAll('a.active'); 
+            if (!clickedElement.classList.contains('active')) { 
+                activeElements.forEach(element => element.classList.remove('active')); 
+                clickedElement.classList.add('active'); 
             }
         }
     });
