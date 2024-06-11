@@ -1,14 +1,14 @@
 nav {
     display: grid;
     gap: 1.8rem;
-    grid-template-columns: 1fr repeat(3, 100px)  30% auto;
+    grid-template-columns: 1fr repeat(3, 100px)  20vw auto;
     padding: 1rem 0;
     overflow: hidden;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background-color: white; /* Add background color if needed */
+    background-color: var(--color-white);
     z-index: 999; 
 }
 
@@ -70,21 +70,20 @@ nav .active{
 }
 
 @media screen and (max-width: 768px){
-    nav {
-        gap: .5rem;
-        grid-template-columns: repeat(auto-fit, 186px);
+nav {
+    gap: .5rem;
+    grid-template-columns: repeat(auto-fit, 186px);
+    }        
+nav .logo{
+    margin: 0;
+    padding: 0 1rem;
+    display: block;
+    text-align: start;
         }
-
-    nav .logo{
-        margin: 0;
-        padding: 0 1rem;
-        display: block;
-        text-align: start;
-    }
-    nav .logo img{
-        grid-column-start: 1;
-        width: 3rem;
-        height: auto;
+nav .logo img{
+    grid-column-start: 1;
+    width: 3rem;
+    height: auto;
     }
 nav .hamburger-menu{
     grid-column-start: 2;
@@ -95,23 +94,23 @@ nav .hamburger-menu{
     color: var(--color-dark);
     margin-right: 1rem;
     margin-top: .5rem;
-}
+    }
 nav .nav-web{
-display: none;
-}
+    display: none;
+    }
 nav .nav-item-5{
     margin-right: 0;
-}
+    }
 nav .nav-mobile{
     z-index: 3;
     grid-column-start: 2;
     justify-content: end;
     text-align: end;
-}
+    }
 
 nav .active{
-margin-right: 1rem;
-}
+    margin-right: 1rem;
+    }
 
 
 }
