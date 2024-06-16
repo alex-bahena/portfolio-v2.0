@@ -1,23 +1,25 @@
 nav {
     display: grid;
     gap: 1.8rem;
-    grid-template-columns: 1fr repeat(3, 100px)  20vw auto;
+    grid-template-columns: 43vw repeat(3, auto) 1fr auto;
     padding: 1rem 0;
-    overflow: hidden;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     background-color: var(--color-white);
     z-index: 999; 
+    justify-items: stretch;
+    align-items: stretch;
 }
 
 nav > div{
-    padding: var(--padding-2);
+    padding:  var(--padding-2) 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 nav .logo img{
     grid-column-start: 1;
@@ -54,9 +56,8 @@ nav .nav-item-4{
 }
 nav .nav-item-5{
     grid-column-start: 6;
-    justify-content: end;
-    text-align: end;
-    margin-right: 4rem;
+    justify-content: start;
+    margin-right: 2rem;
 }
 
 nav .nav-item-4 a, nav .nav-item-5 a{
@@ -69,10 +70,18 @@ nav .active{
     color: var(--color-primary);
 }
 
+
+/* @media screen and (max-width: 1920px){
+    nav {
+        grid-template-columns: auto repeat(3, 100px)  20vw auto;
+    }
+} */
+
 @media screen and (max-width: 768px){
 nav {
     gap: .5rem;
-    grid-template-columns: repeat(auto-fit, 186px);
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
     }        
 nav .logo{
     margin: 0;
@@ -104,6 +113,7 @@ nav .nav-item-5{
 nav .nav-mobile{
     z-index: 3;
     grid-column-start: 2;
+    padding: var(--padding-2);
     justify-content: end;
     text-align: end;
     }
