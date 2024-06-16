@@ -37,6 +37,7 @@
   border: 0;
   text-decoration: none;
   box-sizing: border-box;
+  outline: 1px solid #f00 !important;
 }
 
 html {

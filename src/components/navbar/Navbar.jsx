@@ -23,7 +23,8 @@ function Navbar() {
 
     return (
         <nav className='navbar'>
-            <div className="logo"><img src="assets/A.png" alt="logo" />
+            <div className="logo">
+                <img src="assets/A.png" alt="logo" />
             </div>
             <span className="hamburger-menu material-symbols-sharp" onClick={toggleMenu}>
                 {isMenuOpen ? "drag_handle" : "close"}
