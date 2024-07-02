@@ -1,7 +1,7 @@
 nav {
     display: grid;
     gap: 1.8rem;
-    grid-template-columns: 43vw repeat(3, auto) 1fr auto;
+    grid-template-columns: 1fr repeat(3, 13.66%) 16.66% 8.66%;
     padding: 1rem 0;
     position: fixed;
     top: 0;
@@ -11,6 +11,7 @@ nav {
     z-index: 999; 
     justify-items: stretch;
     align-items: stretch;
+    overflow: hidden;
 }
 
 nav > div{
@@ -23,7 +24,7 @@ nav > div{
 
 nav .logo img{
     grid-column-start: 1;
-    width: 5rem;
+    width: 10rem;
     height: auto;
 }
 
@@ -70,12 +71,12 @@ nav .active{
     color: var(--color-primary);
 }
 
-
-/* @media screen and (max-width: 1920px){
-    nav {
-        grid-template-columns: auto repeat(3, 100px)  20vw auto;
+@media screen and (max-width: 1200px){
+    nav{
+        grid-template-columns: 2fr repeat(3, 10.66%) 1fr auto;
     }
-} */
+}
+
 
 @media screen and (max-width: 768px){
 nav {
@@ -91,7 +92,7 @@ nav .logo{
         }
 nav .logo img{
     grid-column-start: 1;
-    width: 3rem;
+    width: 7rem;
     height: auto;
     }
 nav .hamburger-menu{
@@ -102,7 +103,6 @@ nav .hamburger-menu{
     font-size: 2rem;
     color: var(--color-dark);
     margin-right: 1rem;
-    margin-top: .5rem;
     }
 nav .nav-web{
     display: none;

@@ -8,7 +8,6 @@ margin-top: 50px;
 align-items: center;
 text-align: center;
 background-color: var(--color-white);
-
 }
 
 .hero .hero-content{
@@ -34,14 +33,15 @@ background-color: var(--color-white);
     animation: bounce 3s ease-in-out infinite;
     margin-top: 4rem;
     font-size: 2.5rem;
+    overflow: hidden;
 }
 
 
 @media screen and (max-width: 768px){
-    .hero div h2{
+   section .hero-content h1{
         font-size: 1.8rem;
     }
-  section div p{
+  section .hero-content p{
     font-size: 1.2rem;
    }
     .arrow-down {
