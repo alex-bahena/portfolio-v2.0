@@ -1,21 +1,30 @@
 nav {
     display: grid;
     gap: 1.8rem;
-    grid-template-columns: 1fr repeat(3, 100px)  30% auto;
+    grid-template-columns: 1fr repeat(3, 13.66%) 16.66% 8.66%;
     padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-white);
+    z-index: 999; 
+    justify-items: stretch;
+    align-items: stretch;
     overflow: hidden;
 }
 
 nav > div{
-    padding: var(--padding-2);
+    padding:  var(--padding-2) 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
 nav .logo img{
     grid-column-start: 1;
-    width: 5rem;
+    width: 10rem;
     height: auto;
 }
 
@@ -48,9 +57,8 @@ nav .nav-item-4{
 }
 nav .nav-item-5{
     grid-column-start: 6;
-    justify-content: end;
-    text-align: end;
-    margin-right: 4rem;
+    justify-content: start;
+    margin-right: 2rem;
 }
 
 nav .nav-item-4 a, nav .nav-item-5 a{
@@ -63,20 +71,29 @@ nav .active{
     color: var(--color-primary);
 }
 
-@media screen and (max-width: 768px){
-    nav {
-        gap: .5rem;
-        grid-template-columns: repeat(auto-fit, 186px);
-        }
-
-    nav .logo{
-        display: block;
-        text-align: start;
+@media screen and (max-width: 1200px){
+    nav{
+        grid-template-columns: 2fr repeat(3, 10.66%) 1fr auto;
     }
-    nav .logo img{
-        grid-column-start: 1;
-        width: 3rem;
-        height: auto;
+}
+
+
+@media screen and (max-width: 768px){
+nav {
+    gap: .5rem;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+    }        
+nav .logo{
+    margin: 0;
+    padding: 0 1rem;
+    display: block;
+    text-align: start;
+        }
+nav .logo img{
+    grid-column-start: 1;
+    width: 7rem;
+    height: auto;
     }
 nav .hamburger-menu{
     grid-column-start: 2;
@@ -86,24 +103,24 @@ nav .hamburger-menu{
     font-size: 2rem;
     color: var(--color-dark);
     margin-right: 1rem;
-    margin-top: 1rem;
-}
+    }
 nav .nav-web{
-display: none;
-}
+    display: none;
+    }
 nav .nav-item-5{
     margin-right: 0;
-}
+    }
 nav .nav-mobile{
-    z-index: 1;
+    z-index: 3;
     grid-column-start: 2;
+    padding: var(--padding-2);
     justify-content: end;
     text-align: end;
-}
+    }
 
 nav .active{
-margin-right: 1rem;
-}
+    margin-right: 1rem;
+    }
 
 
 }

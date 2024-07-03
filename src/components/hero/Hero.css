@@ -1,0 +1,51 @@
+.hero{
+height: 100vh;
+display: grid;
+grid-template-columns: 1fr;
+gap: 1.8rem;
+overflow: hidden;
+margin-top: 50px;
+align-items: center;
+text-align: center;
+background-color: var(--color-white);
+}
+
+.hero .hero-content{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: grid
+}
+
+.hero div h2{
+    color: var(--color-dark);
+    font-size: 2rem;
+}
+
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.arrow-down {
+    animation: bounce 3s ease-in-out infinite;
+    margin-top: 4rem;
+    font-size: 2.5rem;
+    overflow: hidden;
+}
+
+
+@media screen and (max-width: 768px){
+   section .hero-content h1{
+        font-size: 1.8rem;
+    }
+  section .hero-content p{
+    font-size: 1.2rem;
+   }
+    .arrow-down {
+        margin-top: 3rem;
+        font-size: 2rem;
+    }
+}
