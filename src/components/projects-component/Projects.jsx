@@ -13,7 +13,7 @@ function Projects() {
     const { width: windowWidth } = useWindowSize();
     const isMobile = windowWidth <= 1200;
     return (
-        <section id="white" className="projects-section">
+        <section id="projects" className="projects-section">
             <div className='projects-title'>
                 <h2 className='title-decoration'><span>Projects</span></h2>
             </div>

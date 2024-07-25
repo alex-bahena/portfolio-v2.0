@@ -1,47 +1,38 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import useWindowSize from '../../../hooks/useWindowSize';
 
-
-const DarkMode = () =>{
+const DarkMode = () => {
     const { width: windowWidth } = useWindowSize();
-    const isMobile = windowWidth <= 768
-    const body = document.body;
-    const lightMode = 'light_mode';
-    const darkMode = 'dark_mode';
-    let  theme;
-    const [appTheme, setappTheme] = useState('')
-    console.log(appTheme);
+    const isMobile = windowWidth <= 768;
 
-    const darkTheme = () => {
-        if (localStorage) {
-         theme = localStorage.getItem('theme')   
-            setappTheme(theme)
-        }
-        if(theme === darkMode){
-            body.classList.add('dark-mode-variables')
+    const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'dark_mode');
+
+    useEffect(() => {
+        if (theme === 'dark_mode') {
+            document.body.classList.add('dark-mode-variables');
+            localStorage.setItem('theme', 'dark_mode');
             localStorage.setItem('DARK_MODE', 'dark-mode-variables')
-            localStorage.setItem('theme', lightMode)
-        }else {
-            body.classList.remove('dark-mode-variables')
-            localStorage.setItem('theme', darkMode )
+        } else {
+            document.body.classList.remove('dark-mode-variables');
+            localStorage.setItem('theme', 'light_mode');
             localStorage.setItem('DARK_MODE', '.')
         }
-    }
-const themeLastState = localStorage.getItem('theme');
+    }, [theme]);
+
+    const toggleTheme = () => {
+        setTheme(prevTheme => (prevTheme === 'dark_mode' ? 'light_mode' : 'dark_mode'));
+    };
 
     return (
-       <span className='dark-mode-wrapper' onClick={(e) => darkTheme(e)}>
-        <span id="dark-mode"className="material-symbols-sharp dark-mode" >
-            {themeLastState ? themeLastState : darkMode}
+        <span className='dark-mode-wrapper' onClick={toggleTheme}>
+            <span className="material-symbols-sharp dark-mode">
+            {theme === 'light_mode' ? 'dark_mode' : 'light_mode'}
+            </span>
+            {!isMobile &&
+                <span>{theme === 'light_mode' ? 'Dark mode' : 'Light mode'}</span>
+            }
         </span>
-        {!isMobile &&
-            <span id="dark-mode">{themeLastState === 'light_mode'? 'Light mode' : 'Dark mode'}
-            </span> 
-        }
-        </span>
-  
-    )
-
-}
+    );
+};
 
 export default DarkMode;
