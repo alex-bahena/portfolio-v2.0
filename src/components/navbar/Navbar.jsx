@@ -21,14 +21,11 @@ function Navbar() {
             const clickedElement = event.target.closest('a');
             if (clickedElement) {
                 event.preventDefault();
-               /* Logic left a future project -- 
-               The following two commented lines of code, help removing the active classname of the current element, 
-               so we don't have two active elements when the user clicks on it. */
+             
+                const activeElements = document.querySelectorAll('a.active');
+                activeElements.forEach(element => element.classList.remove('active'));
 
-                // const activeElements = document.querySelectorAll('a.active');
-                // activeElements.forEach(element => element.classList.remove('active'));
-
-                /* Right now the active classname is removed after 1500ms (1.5s) */
+                /* The active classname is removed after 1500ms (1.5s) */
                 clickedElement.classList.add('active');
                 setTimeout(() => {
                     clickedElement.classList.remove('active');
