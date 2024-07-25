@@ -4,7 +4,7 @@ import './Hero.css'
 function Hero() {
     return (
 
-<section id="white" className="hero">
+<section className="hero">
     <div className='hero-content'>
     <h1>Hi, I&apos;m Alex Bahena</h1>
     <p>A Toronto-based Fullstack Developer</p>

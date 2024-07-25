@@ -8,7 +8,7 @@ function About() {
     const isMobile = windowWidth <= 768;
 
     return (
-        <section id="background" className="about">
+        <section id="about" className="about">
               <div className='profile-photo'>
                         <img src={profilephoto} alt="profile-photo" />
                     </div>
