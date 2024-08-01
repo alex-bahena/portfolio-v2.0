@@ -65,7 +65,9 @@ nav .right-menu .nav-item-6 {
 nav .right-menu .nav-item-6 .dark-mode-wrapper{
     padding: 0rem .88rem;
     border-radius: 5px;
+    white-space: nowrap;
 }
+
 
 nav .right-menu .nav-item-6 span:nth-child(1) {
     font-size: 1.6rem;
