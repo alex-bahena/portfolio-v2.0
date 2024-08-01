@@ -82,7 +82,7 @@ function Navbar() {
                 <a  href="#resume">resume</a>
             </div>
             <div className={isMenuOpen ? 'nav-item-5 nav-web' : 'nav-mobile'}>
-                <a onClick={(e) => handleAnchorClick(e, 'contact')}>contact</a>
+                <a href="#contact" onClick={(e) => handleAnchorClick(e, 'contact')}>contact</a>
             </div>
             </>
             :    <>
@@ -102,7 +102,7 @@ function Navbar() {
                 <a  href="#resume">resume</a>
             </div>
             <div className={isMenuOpen ? 'nav-item-5 nav-web' : 'nav-mobile'}>
-                <a onClick={(e) => handleAnchorClick(e, 'contact')}>contact</a>
+                <a href="#contact" onClick={(e) => handleAnchorClick(e, 'contact')}>contact</a>
             </div>
             <div className={isMenuOpen ? 'nav-item-6 nav-web' : 'nav-mobile'}>
            <DarkMode></DarkMode>
