@@ -4,7 +4,7 @@ function Contact() {
 
 
     return ( 
-    <div className='contact-wrapper'>
+    <div id='contact' className='contact-wrapper'>
             <h2 className='title-decoration'><span>Conctact</span></h2>
             <div className='contact-content'>
             I am currently seeking employment, 

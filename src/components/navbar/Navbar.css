@@ -1,4 +1,4 @@
-nav {
+.navbar {
     display: grid;
     gap: 1.8rem;
     grid-template-columns: repeat(3, 1fr);
@@ -15,7 +15,8 @@ nav {
     overflow: hidden;
 }
 
-nav .logo h3 {
+
+.navbar .logo h3 {
     font-size: 1.2rem;
     border: 1px solid var(--color-dark);
     padding: .3rem;
@@ -23,38 +24,39 @@ nav .logo h3 {
     text-align: center;
 }
 
-nav > div a:hover {
+.navbar > div a:hover {
     cursor: pointer;
 }
 
-nav .hamburger-menu {
+.navbar .hamburger-menu {
     display: none;
 }
 
 
-nav .center-menu {
+.navbar .center-menu {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     text-align: center;
 }
 
-nav .right-menu {
+.navbar .right-menu {
     display: grid;
     gap: 1.8rem;
     grid-template-columns: repeat(3, minmax(0, 1fr));
+ 
 }
 
 
-nav .right-menu .nav-item-4 {
+.navbar .right-menu .nav-item-4 {
     text-align: end;
 }
 
-nav .right-menu .nav-item-5 {
+.navbar .right-menu .nav-item-5 {
     text-align: start;
 }
 
-nav .right-menu .nav-item-6 {
+.navbar .right-menu .nav-item-6 {
     display: grid;
     text-align: center;
     align-items: center;
@@ -62,12 +64,14 @@ nav .right-menu .nav-item-6 {
     gap: 0.5rem;
 }
 
-nav .right-menu .nav-item-6 .dark-mode-wrapper{
+.navbar .right-menu .nav-item-6 .dark-mode-wrapper{
     padding: 0rem .88rem;
     border-radius: 5px;
+    white-space: nowrap;
 }
 
-nav .right-menu .nav-item-6 span:nth-child(1) {
+
+.navbar .right-menu .nav-item-6 span:nth-child(1) {
     font-size: 1.6rem;
     cursor: pointer;
     display: inline-block;
@@ -76,7 +80,7 @@ nav .right-menu .nav-item-6 span:nth-child(1) {
     color: var(--color-white);
 }
 
-nav .right-menu .nav-item-6 span:nth-child(2) {
+.navbar .right-menu .nav-item-6 span:nth-child(2) {
     font-size: .88rem;
     margin-left: .2rem;
     cursor: pointer;
@@ -84,8 +88,8 @@ nav .right-menu .nav-item-6 span:nth-child(2) {
     vertical-align: middle;
 }
 
-nav .nav-item-4 a,
-nav .nav-item-5 a {
+.navbar .nav-item-4 a,
+.navbar .nav-item-5 a {
     border: 1px solid var(--color-info-dark);
     border-radius: 5px;
     padding: .5rem 1rem;
@@ -93,63 +97,72 @@ nav .nav-item-5 a {
     vertical-align: middle;
 }
 
-nav .active {
+.navbar .active {
     color: var(--color-primary);
 }
 
 
 @media screen and (max-width: 768px) {
-    nav {
+    .navbar {
         gap: .5rem;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         overflow: hidden;
         justify-items: stretch;
     }
 
-    nav .logo {
-        justify-self: start;
-        margin-left: 1rem;
+    .nav-active{
+        border-bottom: 0.5px solid var(--color-dark);
     }
 
-    nav .mobile-right-menu {
+    .navbar .logo {
+        justify-self: start;
+        margin-left: 1rem;
+
+    }
+
+    .navbar .mobile-right-menu {
         display: grid;
         gap: 1.5rem;
         grid-template-columns: 1fr auto;
         align-items: baseline;
+
     }
 
 
-    nav .mobile-right-menu .dark-mode-wrapper {
+    .navbar .mobile-right-menu .dark-mode-wrapper {
         justify-self: right;
     }
 
-    nav .hamburger-menu {
+    .navbar .hamburger-menu {
         grid-column-start: 2;
         display: block;
         justify-content: end;
         text-align: end;
         font-size: 1.6rem;
         color: var(--color-dark);
-        margin-right: 1rem;
+        margin-right: 1rem;        
     }
 
-    nav .nav-web {
+    .navbar .nav-web {
         display: none;
     }
 
-    nav .nav-item-5 {
+    .navbar .nav-item-5 {
         margin-right: 0;
     }
 
-    nav .nav-mobile {
-        z-index: 3;
-        grid-column-start: 2;
-        padding: var(--padding-2);
-        justify-content: end;
-        text-align: end;
+    .navbar .nav-mobile {
+    display: grid;
+    gap: 1.5rem;
+    grid-column-start: 2;
+    justify-content: end;
+    text-align: end;
+    margin-right: 1rem;
     }
 
-    nav .active {
+ 
+
+    .navbar .active {
         margin-right: 1rem;
     }
 
