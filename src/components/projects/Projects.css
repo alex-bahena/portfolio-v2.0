@@ -2,11 +2,12 @@
     display: grid;
     row-gap: 4rem;
     column-gap: 2rem;
-    grid-template-columns: repeat(2, 50%);
+    padding-bottom: 4rem;
+    grid-template-columns: repeat(2, auto);
+    background-color: var(--color-white);
     align-items: center;
     text-align: center;
     overflow: hidden;
-    background-color: var(--color-white);
 }
 
 
@@ -134,7 +135,7 @@
 .projects-section .project-card-3 .content-card-3 .technologies {
     display: grid;
     gap: 1rem;
-    grid-template-columns: 1fr repeat(4, auto);
+    grid-template-columns:repeat(3, auto) 1fr;
     margin-bottom: 1rem;
 }
 
@@ -182,7 +183,7 @@
 .projects-section .project-card-4 .content-card-4 .technologies {
     display: grid;
     gap: 1rem;
-    grid-template-columns: 1fr repeat(4, auto);
+    grid-template-columns: repeat(4, auto) 1fr;
     margin-bottom: 1rem;
 }
 
@@ -330,7 +331,7 @@
     .projects-section .project-card-3 .content-card-3 .technologies {
         display: grid;
         gap: .5rem;
-        grid-template-columns: repeat(auto-fill, 60px)
+        grid-template-columns: repeat(auto-fill, 1fr)
     }
 
     .projects-section .project-card-3 .repo-links {
@@ -373,7 +374,7 @@
     .projects-section .project-card-4 .content-card-4 .technologies{
         display: grid;
         column-gap: .5rem;
-        grid-template-columns: repeat(auto-fill, 60px)
+        grid-template-columns: repeat(auto-fill, 50px)
     }
 
     .projects-section .project-card-4 .repo-links {

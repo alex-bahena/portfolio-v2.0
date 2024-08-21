@@ -10,6 +10,7 @@ const [
 ] = projects
 
 function Projects() {
+
     const { width: windowWidth } = useWindowSize();
     const isMobile = windowWidth <= 1200;
     return (
@@ -33,7 +34,7 @@ function Projects() {
                        <span key={index}>{tech}</span>
                     ))}
                 </div>
-                <div className="repo-links"><a href={p1_links}>
+                <div className="repo-links"><a rel="noopener noreferrer" target="_blank"href={p1_links[0]}>
                     <span className="external_link material-symbols-sharp">
                         open_in_new 
                     </span>
@@ -56,7 +57,7 @@ function Projects() {
                           <span key={index}>{tech}</span>
                         ))}
                    </div>
-                   <div className="repo-links"><a href={p1_links}>
+                   <div className="repo-links"><a rel="noopener noreferrer" target="_blank"href={p1_links}>
                        <span className="external_link material-symbols-sharp">
                            open_in_new 
                        </span>
@@ -80,8 +81,8 @@ function Projects() {
                     ))}
                 </div>
                 <div className="repo-links">
-                <a href={p2_links[0]}> <span className="fa fa-github"></span></a>
-                <a href={p2_links[1]}> <span className="external_link material-symbols-sharp">
+                <a rel="noopener noreferrer" target="_blank"href={p2_links[0]}> <span className="fa fa-github"></span></a>
+                <a rel="noopener noreferrer" target="_blank"href={p2_links[1]}> <span className="external_link material-symbols-sharp">
                         open_in_new 
                     </span></a>
                 </div>
@@ -103,8 +104,8 @@ function Projects() {
                         ))}
                    </div>
                    <div className="repo-links">
-                   <a href={p2_links[0]}> <span className="fa fa-github"></span></a>
-                <a href={p2_links[1]}> <span className="external_link material-symbols-sharp">
+                   <a rel="noopener noreferrer" target="_blank"href={p2_links[0]}> <span className="fa fa-github"></span></a>
+                <a rel="noopener noreferrer" target="_blank"href={p2_links[1]}> <span className="external_link material-symbols-sharp">
                         open_in_new 
                     </span></a>
                 </div>
@@ -131,8 +132,8 @@ function Projects() {
                 </div>
                 </div>
                 <div className="repo-links">
-                <a href={p3_links[0]}> <span className="fa fa-github"></span></a>
-                <a href={p3_links[1]}> <span className="external_link material-symbols-sharp">
+                <a rel="noopener noreferrer" target="_blank"href={p3_links[0]}> <span className="fa fa-github"></span></a>
+                <a rel="noopener noreferrer" target="_blank"href={p3_links[1]}> <span className="external_link material-symbols-sharp">
                         open_in_new 
                     </span></a>
                 </div>
@@ -152,8 +153,8 @@ function Projects() {
                 </div>
                 </div>
                 <div className="repo-links">
-                <a href={p4_links[0]}><span className="fa fa-github"></span></a>
-                <a href={p4_links[1]}><span className="external_link material-symbols-sharp">
+                <a rel="noopener noreferrer" target="_blank"href={p4_links[0]}><span className="fa fa-github"></span></a>
+                <a rel="noopener noreferrer" target="_blank"href={p4_links[1]}><span className="external_link material-symbols-sharp">
                         open_in_new 
                     </span></a>
                 </div>
