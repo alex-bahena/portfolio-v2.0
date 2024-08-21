@@ -18,15 +18,15 @@ const projects = [
         p3_name: "Dynamic README file generator",
         p3_description: "A Node.js command-line tool integrated with Inquirer.js that auto-generates README.md templates to save time for project developers.",
         p3_technologies: ["JavaScript", "Node.js", "Inquirer.js"],
-        p3_links: ["https://github.com/alex-bahena/Dynamic-README-Generator/tree/master", "wwww."]
+        p3_links: ["https://github.com/alex-bahena/Dynamic-README-Generator/tree/master", "https://drive.google.com/file/d/1KqcdsAU1tB-Me3seFD1IpReFs_S3nkjg/view"]
     },
     {
         p4_thumbnail: "/src/components/projects/projects-img/Google-books-api.png",
         p4_name: "Google Books API - Search engine",
-        p4_description: "Fully functioning Google Books API search engine.",
+        p4_description: "A React.js and Node.js app using the Google Books API, allowing users to easily search and view book details with a dynamic interface.",
         p4_technologies: ["React.js", "Node.js", "Express.js", "GraphQL", "MongoDB" ],
         p4_links: ["https://github.com/alex-bahena/Books-search-engine", "https://random-book-search-engine.herokuapp.com/"]
     },
 ];
 
-export default projects;
+export default projects; 

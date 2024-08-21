@@ -19,7 +19,7 @@ function Navbar() {
         const darkTheme = localStorage.getItem('DARK_MODE');
         document.body.classList.add(darkTheme);
         const handleClick = (event) => {
-            const clickedElement = event.target.closest('a');
+            const clickedElement = event.target.closest('.nav-link');
             if (clickedElement) {
                 event.preventDefault();
                 setIsMenuOpen(isMenuOpen);
@@ -71,32 +71,32 @@ function Navbar() {
                     </span>
                 </div>
                 <div className={isMenuOpen ? 'nav-web' : 'nav-mobile'}>
-                    <a onClick={(e) => handleAnchorClick(e, 'about')}>about</a>
-                    <a href="#experience" >experience</a>
-                    <a onClick={(e) => handleAnchorClick(e, 'projects')}>projects</a>
-                    <a href="#resume">resume</a>
-                    <a href="#contact" onClick={(e) => handleAnchorClick(e, 'contact')}>contact</a>
+                    <a className='nav-link' onClick={(e) => handleAnchorClick(e, 'about')}>about</a>
+                    <a className='nav-link' href="#experience" >experience</a>
+                    <a className='nav-link' onClick={(e) => handleAnchorClick(e, 'projects')}>projects</a>
+                    <a className='nav-link' href="#resume">resume</a>
+                    <a className='nav-link' href="#contact" onClick={(e) => handleAnchorClick(e, 'contact')}>contact</a>
                 </div>
 
             </>
                 : <>
                     <div className='center-menu'>
                         <div className='nav-item-1 nav-web' >
-                            <a onClick={(e) => handleAnchorClick(e, 'about')}>about</a>
+                            <a className='nav-link' onClick={(e) => handleAnchorClick(e, 'about')}>about</a>
                         </div>
                         <div className='nav-item-2 nav-web' >
-                            <a href="#experience" >experience</a>
+                            <a className='nav-link' href="#experience" >experience</a>
                         </div>
                         <div className='nav-item-3 nav-web' >
-                            <a onClick={(e) => handleAnchorClick(e, 'projects')}>projects</a>
+                            <a className='nav-link' onClick={(e) => handleAnchorClick(e, 'projects')}>projects</a>
                         </div>
                     </div>
                     <div className='right-menu'>
                         <div className='nav-item-4 nav-web' >
-                            <a href="#resume">resume</a>
+                            <a className='nav-link' href="#resume">resume</a>
                         </div>
                         <div className='nav-item-5 nav-web' >
-                            <a href="#contact" onClick={(e) => handleAnchorClick(e, 'contact')}>contact</a>
+                            <a className='nav-link' href="#contact" onClick={(e) => handleAnchorClick(e, 'contact')}>contact</a>
                         </div>
                         <div className='nav-item-6 nav-web' >
                             <DarkMode></DarkMode>
