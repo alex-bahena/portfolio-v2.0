@@ -3,22 +3,17 @@ import './Contact.css'
 function Contact() {
 
 
-    return ( 
-    <div id='contact' className='contact-wrapper'>
+    return (
+        <div id='contact' className='contact-wrapper'>
             <h2 className='title-decoration'><span>Conctact</span></h2>
             <div className='contact-content'>
-            I am currently seeking employment, 
-            and I would appreciate it if you could <br></br> contact 
-            me with any available job opportunities
+            I am currently looking for a position in software development or a related field. If you have any job openings available, I would appreciate it if you could contact me.
             </div>
             <div className='contact-button'>
-                <button>Say Hello!</button>
+                <button><a href="mailto:alex.bahena.ca@gmail.com">Say Hello!</a></button>
             </div>
-            <div className='contact-links-media'>
-                <a href=""><span className="fa fa-github"></span></a>
-                <a href=""><span className="fa fa-linkedin"></span></a>
-            </div>
-    </div>
+
+        </div>
     )
 }
 
