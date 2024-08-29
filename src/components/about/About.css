@@ -1,10 +1,8 @@
 .about{
-    height: auto;
-    margin-bottom: 20vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(2,minmax(0,1fr));
-    grid-template-rows: 20vh 1fr;
-    gap: 1.8rem;
+    gap: 1.8rem; 
     overflow: hidden;
     text-align: center;
     align-items:start;
@@ -30,10 +28,6 @@
     grid-column: 1 / span 2;
     align-self: center;
     margin-top: 2rem;
-}
-
-.about .about-me h2{
-    font-size: 1.8rem;
 }
 
 .about p{

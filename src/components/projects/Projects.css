@@ -4,7 +4,6 @@
     column-gap: 2rem;
     padding-bottom: 4rem;
     grid-template-columns: repeat(2, auto);
-    background-color: var(--color-white);
     align-items: center;
     text-align: center;
     overflow: hidden;
@@ -205,7 +204,6 @@
         display: grid;
         row-gap: 1.8rem;
         grid-template-columns: minmax(0,1fr);
-        background-color: var(--color-white);
     }
 
     .projects-section .projects-title {
