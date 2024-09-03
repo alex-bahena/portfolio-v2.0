@@ -1,5 +1,5 @@
 .about{
-    height: 100vh;
+    height: 90vh;
     display: grid;
     grid-template-columns: repeat(2,minmax(0,1fr));
     gap: 1.8rem; 
@@ -15,11 +15,10 @@
 
 
 .about .profile-photo img{
-    width: 20vw;
+    width: 15vw;
     height: auto;
-    border-radius: 5%;
-    box-shadow: var(--box-shadow);
-    border: 1px solid var(--color-light);
+    filter: var(--filter-glow);
+    margin-right: 6rem;
 }
 
 
@@ -30,19 +29,20 @@
     margin-top: 2rem;
 }
 
-.about p{
+.about .about-description p{
     grid-row-start: 2;
     padding: 0 1rem;
-    text-align: justify;
+    text-align: left;
     text-justify: inter-word;
     float:right;
     font-size: 1.2rem;
+    width: 80%;
 }
 
 
 @media screen and (max-width: 768px){
     .about{
-        height: 100vh;
+        height: auto;
         grid-template-columns: 1fr;
         gap: 0;
         align-items:center;
@@ -53,22 +53,24 @@
 
     .about .profile-photo{
         grid-column-start: 1;
-        grid-row-start: 1;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        align-self: start;
+        grid-row-start: 2;
     }
     
     .about .profile-photo img{
+        margin-right: 0rem;
         width: auto;
         height: 30vh;
         border-radius: 10%;
     }
     
     .about .about-me{
-        display: inline-block;
+        display: grid;
         padding: 0 var(--padding-2);
-        grid-row-start: 2;
+    }
+
+    .about-me .section-title{
+      margin-top: 1.8rem;
+        grid-row-start: 1;
     }
     
     .about .about-me h2{
@@ -76,12 +78,12 @@
         margin-bottom: 2rem;
     }
 
-    .about p{
-        width: 100%;
+    .about .about-description p{
+       
         font-size: 1rem;
         padding: 1rem 1rem;
         text-align: justify;
         text-justify: inter-word;
-        float: none;
-    }
+        float: none; 
+}
 }
