@@ -1,16 +1,19 @@
 .about{
-    height: 90vh;
+    height: 80vh;
     display: grid;
-    grid-template-columns: repeat(2,minmax(0,1fr));
+    grid-template-columns: 60% 40%;
     gap: 1.8rem; 
     overflow: hidden;
     text-align: center;
-    align-items:start;
+    justify-content: center;
+    align-items:center;
 }
 
 .about .profile-photo{
+    width: 30vw;
     grid-row-start: 2;
     grid-column-start: 2;
+    align-self:self-start;
 }
 
 
@@ -18,15 +21,16 @@
     width: 15vw;
     height: auto;
     filter: var(--filter-glow);
-    margin-right: 6rem;
 }
 
 
 .about .about-me{
     grid-row-start: 1;
     grid-column: 1 / span 2;
-    align-self: center;
-    margin-top: 2rem;
+}
+
+.about .about-description{
+    align-self:self-start;
 }
 
 .about .about-description p{
@@ -52,6 +56,7 @@
     }
 
     .about .profile-photo{
+        width: auto;
         grid-column-start: 1;
         grid-row-start: 2;
     }
@@ -78,11 +83,10 @@
         margin-bottom: 2rem;
     }
 
-    .about .about-description p{
-       
+    .about  p{
         font-size: 1rem;
         padding: 1rem 1rem;
-        text-align: justify;
+        text-align: left;
         text-justify: inter-word;
         float: none; 
 }
