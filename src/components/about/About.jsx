@@ -20,7 +20,7 @@ function About() {
                         </div>
                         <p className='line-jump'>Hey there! I’m Alex, a Mechatronics Engineer located in the <span className='emphasis-text'>Greater Toronto Area</span>. With a background in automation spanning over five years, I’ve recently transitioned into software development.</p>
 
-                        <p className='line-jump'>By combining my engineering skills and passion for coding, I<span className='emphasis-text'> specialized</span> in creating innovative and efficient solutions to real-world problems.</p>
+                        <p className='line-jump'>By combining my engineering skills and passion for coding, <span className='emphasis-text'>I specialized</span> in creating innovative and efficient solutions to real-world problems.</p>
 
                         <p> Outside of work, I love exploring small towns with my family and capturing unique perspectives through my camera and drone. My hobbies keep me inspired and curious about the world around me.</p>
                     </div>
@@ -36,7 +36,7 @@ function About() {
                     <div className='about-description'>
                         <p className='line-jump'>Hey there! I’m Alex, a Mechatronics Engineer located in the <span className='emphasis-text'>Greater Toronto Area</span>. With a background in automation spanning over five years, I’ve recently transitioned into software development.</p>
 
-                        <p className='line-jump'>By combining my engineering skills and passion for coding, I<span className='emphasis-text'> specialized</span> in creating innovative and efficient solutions to real-world problems.</p>
+                        <p className='line-jump'>By combining my engineering skills and passion for coding, <span className='emphasis-text'>I specialized</span> in creating innovative and efficient solutions to real-world problems.</p>
 
                         <p> Outside of work, I love exploring small towns with my family and capturing unique perspectives through my camera and drone. My hobbies keep me inspired and curious about the world around me.</p>
                     </div>

@@ -6,6 +6,7 @@ import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer'
 import Toolkits from './components/toolkits/Toolkits';
+import Education from './components/education/Education';
 
 const bodyBackgroundColor = document.querySelector('body');
 
@@ -33,7 +34,8 @@ function App() {
             <Navbar />
             <Hero />
             <About />
-            <Toolkits/>
+            <Education/>
+            {/* <Toolkits/> */}
             <Projects />
             <Contact/>
             <Footer/>
