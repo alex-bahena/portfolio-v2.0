@@ -13,21 +13,21 @@
     padding-bottom: 4rem;
 }
 
-.education .education-title{
+.education .education-title {
     grid-row-start: 1;
     grid-column: 1 / span 2;
 }
 
-.education .graduate-photo{
+.education .graduate-photo {
     width: 50%;
     margin: 0 auto;
     grid-column-start: 1;
     grid-row: 2 / span 3;
 }
 
-.education .graduate-photo img{
+.education .graduate-photo img {
     margin-right: 0rem;
-    width:15vw;
+    width: 15vw;
     height: auto;
     filter: var(--filter-glow);
     float: right;
@@ -40,7 +40,7 @@
     grid-column-start: 2;
 }
 
-.education .education-second h3 span{
+.education .education-second h3 span {
     display: inline-block;
     vertical-align: middle;
     font-size: 1.4rem;
@@ -54,24 +54,36 @@
 }
 
 
-.education .education-first .country-date span:nth-child(1), .education .education-second .country-date span:nth-child(1){
+.education .education-first .country-date span:nth-child(1),
+.education .education-second .country-date span:nth-child(1) {
     display: inline-block;
     vertical-align: middle;
     font-size: 1.4rem;
+    font-weight: 400;
 }
 
-.education .education-first h3, .education .education-second h3{
-  font-weight: 400;  
-  }
+.education .education-first .country-date,
+.education .education-second .country-date {
+    font-size: 1rem;
+    padding: var(--padding-1);
+}
 
-.education .education-first .location, .education .education-second .location{
-  margin-top: .5rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--color-dark);
+.education .education-first h3,
+.education .education-second h3 {
+    font-weight: 400;
+}
+
+.education .education-first .location,
+.education .education-second .location {
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-top: .5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-dark);
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .education {
         height: 100%;
         display: grid;
@@ -82,20 +94,20 @@
         padding: 0;
         padding-bottom: 4rem;
     }
-    
-    .education .graduate-photo{
+
+    .education .graduate-photo {
         width: 50%;
         grid-column-start: 1;
         grid-row-start: 2;
         grid-row: 2;
     }
-    
-    .education .graduate-photo img{
+
+    .education .graduate-photo img {
         margin-right: 0rem;
         width: 100%;
         height: auto;
     }
-    
+
     .education .education-second {
         text-align: left;
         width: 100%;
@@ -112,21 +124,31 @@
         grid-column-start: 1;
         padding: 1.5rem;
     }
-    
-    .education .education-first .country-date span:nth-child(1), .education .education-second .country-date span:nth-child(1){
+
+
+    .education .education-first .country-date span:nth-child(1),
+    .education .education-second .country-date span:nth-child(1) {
         display: inline-block;
         vertical-align: middle;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+        font-weight: 400;
     }
-    
-    .education .education-first h3, .education .education-second h3{
-      font-weight: 300;  
-      }
-    
-    .education .education-first .location, .education .education-second .location{
-      margin-top: .5rem;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid var(--color-dark);
+
+    .education .education-first .country-date,
+    .education .education-second .country-date {
+        font-size: .9rem;
+        padding: var(--padding-1);
+    }
+
+
+    .education .education-first h3,
+    .education .education-second h3 {
+        font-weight: 300;
+    }
+
+    .education .education-first .location,
+    .education .education-second .location {
+        font-size: 1rem;
     }
 
 }
