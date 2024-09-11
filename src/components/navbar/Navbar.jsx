@@ -72,7 +72,7 @@ function Navbar() {
                 </div>
                 <div className={isMenuOpen ? 'nav-web' : 'nav-mobile'}>
                     <a className='nav-link' onClick={(e) => handleAnchorClick(e, 'about')}>about</a>
-                    <a className='nav-link' href="#experience" >experience</a>
+                    <a className='nav-link' href="#education" onClick={(e) => handleAnchorClick(e, 'education')} >education</a>
                     <a className='nav-link' onClick={(e) => handleAnchorClick(e, 'projects')}>projects</a>
                     <a className='nav-link' href="#resume">resume</a>
                     <a className='nav-link' href="#contact" onClick={(e) => handleAnchorClick(e, 'contact')}>contact</a>
@@ -85,7 +85,7 @@ function Navbar() {
                             <a className='nav-link' onClick={(e) => handleAnchorClick(e, 'about')}>about</a>
                         </div>
                         <div className='nav-item-2 nav-web' >
-                            <a className='nav-link' href="#experience" >experience</a>
+                            <a className='nav-link' href="#education" onClick={(e) => handleAnchorClick(e, 'education')} >education</a>
                         </div>
                         <div className='nav-item-3 nav-web' >
                             <a className='nav-link' onClick={(e) => handleAnchorClick(e, 'projects')}>projects</a>

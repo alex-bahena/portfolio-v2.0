@@ -13,6 +13,8 @@
     justify-content: space-around;
     align-items: center;
     overflow: hidden;
+
+    box-shadow: var(--box-shadow);
 }
 
 
@@ -81,8 +83,9 @@
 }
 
 .navbar .right-menu .nav-item-6 span:nth-child(2) {
-    font-size: .88rem;
+    font-size: 1rem;
     margin-left: .2rem;
+    padding: .5rem 0;
     cursor: pointer;
     display: inline-block;
     vertical-align: middle;

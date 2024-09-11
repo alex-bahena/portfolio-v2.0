@@ -1,14 +1,21 @@
 .about{
-    height: 80vh;
+    height: 70vh;
     display: grid;
     grid-template-columns: 60% 40%;
+    grid-template-rows: 15vh 1fr;
     gap: 1.8rem; 
     overflow: hidden;
     text-align: center;
     justify-content: center;
     align-items:center;
+    padding-bottom: 4rem;
 }
 
+.about .about-me{
+    grid-row-start: 1;
+    grid-column: 1 / span 2;
+}
+ 
 .about .profile-photo{
     width: 30vw;
     grid-row-start: 2;
@@ -24,10 +31,6 @@
 }
 
 
-.about .about-me{
-    grid-row-start: 1;
-    grid-column: 1 / span 2;
-}
 
 .about .about-description{
     align-self:self-start;
@@ -43,16 +46,21 @@
     width: 80%;
 }
 
-
 @media screen and (max-width: 768px){
     .about{
         height: auto;
         grid-template-columns: 1fr;
+        grid-template-rows:1fr;
         gap: 0;
         align-items:center;
         text-align: center;
         overflow: hidden;
         margin-bottom: 2rem;
+    }
+
+    .about .about-me h2{
+        font-size: 1.5rem;
+       margin: 2rem 0;
     }
 
     .about .profile-photo{
@@ -79,11 +87,6 @@
         grid-row-start: 1;
     }
     
-    .about .about-me h2{
-        font-size: 1.5rem;
-       margin: 2rem 0;
-    }
-
     .about  p{
         font-size: 1rem;
         padding: 1rem 1rem;

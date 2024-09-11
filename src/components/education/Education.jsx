@@ -5,8 +5,8 @@ import graduatephoto from '/assets/graduatephoto.png'
 function Education() {
     return (
 
-        <section className='education'>
-            <div className='education-title'>
+        <section id='education' className='education'>       
+              <div className='education-title'>
                 <h2 className='title-decoration'><span>Education</span></h2>
             </div>
             <div className='graduate-photo'>
