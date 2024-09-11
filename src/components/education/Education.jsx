@@ -19,14 +19,14 @@ function Education() {
                     </span></a>
                 </h3>
                 <p className='location'>at Monterrey Institute of Technology and Higher Education.</p>
-                <p className='country-date'>  <span className='material-symbols-sharp emphasis-text'>location_on</span> Mexico <span className='emphasis-text'>Feb 2022 - Sept 2022</span></p>
+                <p className='country-date'> <span className='material-symbols-sharp emphasis-text'>location_on</span>Mexico <span className='emphasis-text'>Feb 2022 - Sept 2022</span></p>
             </div>
             <div className='education-first'>
                 <h3>
                     Bachelors of Engineering in Mechatronics
                 </h3>
                 <p className='location'>at Emiliano Zapata Technological University.</p>
-                <p className='country-date'>  <span className='material-symbols-sharp emphasis-text'>location_on</span> Mexico <span className='emphasis-text'>2012 - 2016</span></p>
+                <p className='country-date'> <span className='material-symbols-sharp emphasis-text'>location_on</span>Mexico <span className='emphasis-text'>2012 - 2016</span></p>
             </div>
         </section>
     )
