@@ -31,7 +31,7 @@ function Projects() {
                 <p>{p1_description}</p>
                 <div className="technologies">
                    {p1_technologies.map((tech, index) => (
-                       <span key={index}>{tech}</span>
+                       <span key={index} className='emphasis-text'>{tech}</span>
                     ))}
                 </div>
                 <div className="repo-links"><a rel="noopener noreferrer" target="_blank"href={p1_links[0]}>
@@ -54,7 +54,7 @@ function Projects() {
                    <p>{p1_description}</p>
                    <div className="technologies">
                       {p1_technologies.map((tech, index) => (
-                          <span key={index}>{tech}</span>
+                          <span key={index} className='emphasis-text'>{tech}</span>
                         ))}
                    </div>
                    <div className="repo-links"><a rel="noopener noreferrer" target="_blank"href={p1_links}>
@@ -77,7 +77,7 @@ function Projects() {
                 <p>{p2_description}</p>
                 <div className="technologies">
                    {p2_technologies.map((tech, index) => (
-                       <span key={index}>{tech}</span>
+                       <span key={index} className='emphasis-text'>{tech}</span>
                     ))}
                 </div>
                 <div className="repo-links">
@@ -100,7 +100,7 @@ function Projects() {
                    <p>{p2_description}</p>
                    <div className="technologies">
                       {p2_technologies.map((tech, index) => (
-                          <span key={index}>{tech}</span>
+                          <span key={index} className='emphasis-text'>{tech}</span>
                         ))}
                    </div>
                    <div className="repo-links">
@@ -127,7 +127,7 @@ function Projects() {
                 <p>{p3_description}</p>
                 <div className="technologies">
                 {p3_technologies.map((tech, index) => (
-                    <span key={index}>{tech}</span>
+                    <span key={index} className='emphasis-text'>{tech}</span>
                    ))}
                 </div>
                 </div>
@@ -148,7 +148,7 @@ function Projects() {
                 <p>{p4_description}</p>
                 <div className="technologies">
                 {p4_technologies.map((tech, index) => (
-                    <span key={index}>{tech}</span>
+                    <span key={index} className='emphasis-text'>{tech}</span>
                    ))}
                 </div>
                 </div>
