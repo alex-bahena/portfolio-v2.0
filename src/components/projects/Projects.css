@@ -1,12 +1,13 @@
 .projects-section {
+    height: 100%;
     display: grid;
-    row-gap: 4rem;
+    row-gap: 5rem;
     column-gap: 2rem;
-    padding-bottom: 4rem;
     grid-template-columns: repeat(2, auto);
     align-items: center;
     text-align: center;
     overflow: hidden;
+    padding-bottom: 4rem;
 }
 
 
@@ -22,7 +23,10 @@
     width: inherit;
     height: auto;
     border-radius: 2%;
+    filter: var(--filter-glow);
 }
+
+
 
 .projects-section .project-card-1 {
     grid-column-start: 1;
@@ -31,7 +35,7 @@
 }
 
 .projects-section .content-card-1 {
-    max-width: 80%;
+    max-width:500px;
     text-align: left;
 }
 
@@ -58,6 +62,7 @@
     width: inherit;
     height: auto;
     border-radius: 2%;
+    filter: var(--filter-glow);
 }
 
 .projects-section .project-card-2 {
@@ -67,7 +72,7 @@
 }
 
 .projects-section .content-card-2 {
-    max-width: 80%;
+    max-width:500px;
     margin-left: auto;
     margin-right: 0;
     text-align: right;
@@ -115,10 +120,12 @@
     margin-left: 5rem;
     margin-left: auto;
     margin-right: 0;
+    filter: var(--filter-glow);
 }
 
 .projects-section .project-card-3 .content-card-3 {
     text-align: left;
+    max-width:360px;
 }
 
 .projects-section .project-card-3 .content-card-3 h3 {
@@ -163,10 +170,12 @@
     border-radius: 2%;
     margin-left: 0;
     margin-right: auto;
+    filter: var(--filter-glow);
 }
 
 .projects-section .project-card-4 .content-card-4 {
     text-align: left;
+    max-width:360px;
 }
 
 .projects-section .project-card-4 .content-card-4 h3 {
@@ -201,6 +210,7 @@
 /*MEDIA QUERIES*/
 @media screen and (max-width: 1200px) {
     .projects-section {
+        height: auto;
         display: grid;
         row-gap: 1.8rem;
         grid-template-columns: minmax(0,1fr);

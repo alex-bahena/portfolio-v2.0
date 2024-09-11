@@ -1,5 +1,5 @@
 .about{
-    height: 70vh;
+    height: 50vh;
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: 15vh 1fr;
