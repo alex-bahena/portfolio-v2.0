@@ -74,7 +74,7 @@ function Navbar() {
                     <a className='nav-link' onClick={(e) => handleAnchorClick(e, 'about')}>about</a>
                     <a className='nav-link' href="#education" onClick={(e) => handleAnchorClick(e, 'education')} >education</a>
                     <a className='nav-link' onClick={(e) => handleAnchorClick(e, 'projects')}>projects</a>
-                    <a className='nav-link' href="#resume">resume</a>
+                    <a className='nav-link' rel="noopener noreferrer" target="_blank"href='https://drive.google.com/file/d/1tPiDVhm55eb1bd-Ei3k-C0Aul3gfZvkU/view?usp=sharing'>resume</a>
                     <a className='nav-link' href="#contact" onClick={(e) => handleAnchorClick(e, 'contact')}>contact</a>
                 </div>
 
@@ -93,7 +93,7 @@ function Navbar() {
                     </div>
                     <div className='right-menu'>
                         <div className='nav-item-4 nav-web' >
-                            <a className='nav-link' href="#resume">resume</a>
+                            <a className='nav-link' rel="noopener noreferrer" target="_blank"href='https://drive.google.com/file/d/1tPiDVhm55eb1bd-Ei3k-C0Aul3gfZvkU/view?usp=sharing'>resume</a>
                         </div>
                         <div className='nav-item-5 nav-web' >
                             <a className='nav-link' href="#contact" onClick={(e) => handleAnchorClick(e, 'contact')}>contact</a>
