@@ -1,24 +1,33 @@
 .contact-wrapper{
-    display: grid;
     height: 50vh;
+    display: grid;
     padding-top: 5vh;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 15vh repeat(2, 1fr);
     background-color: var(--color-white);
+    padding: 0 var(--padding-2);
     row-gap: 2rem;
     align-items: center;
     text-align: center;
 }
 
-.contact-content{
-    font-size: 1.2rem;
+
+.contact-content p{
+    font-size: 1.1rem;
     width: 50%;
     margin: auto;
+    text-justify: inter-word;
+}
+
+.contact-button{
+    align-self: start;
 }
 
 .contact-button button{
     font-size: 1.3rem;
     border: 1px solid var(--color-info-dark);
+    background-color: var(--color-white);
+    filter: var(--filter-glow);
     border-radius: 5px;
     padding: .5rem 2rem;
 }
@@ -29,9 +38,12 @@
 
 
 @media screen and (max-width: 768px){
-    .contact-content{
+    .contact-wrapper{
+        height: auto;
+    }
+    .contact-content p{
         font-size: 1rem;
-        width: 90%;
+        width: 100%;
     }
 
     .contact-button button{
