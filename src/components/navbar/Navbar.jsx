@@ -23,7 +23,7 @@ function Navbar() {
             if (clickedElement) {
                 event.preventDefault();
                 setIsMenuOpen(isMenuOpen);
-                const activeElements = document.querySelectorAll('a.active');
+                const activeElements = document.querySelectorAll('.nav-link .active');
                 activeElements.forEach(element => element.classList.remove('active'));
 
                 /* The active classname is removed after 1500ms (1.5s) */
@@ -72,9 +72,9 @@ function Navbar() {
                 </div>
                 <div className={isMenuOpen ? 'nav-web' : 'nav-mobile'}>
                     <a className='nav-link' onClick={(e) => handleAnchorClick(e, 'about')}>about</a>
-                    <a className='nav-link' href="#education" onClick={(e) => handleAnchorClick(e, 'education')} >education</a>
+                    <a className='nav-link' onClick={(e) => handleAnchorClick(e, 'education')} >education</a>
                     <a className='nav-link' onClick={(e) => handleAnchorClick(e, 'projects')}>projects</a>
-                    <a className='nav-link' rel="noopener noreferrer" target="_blank"href='https://drive.google.com/file/d/1tPiDVhm55eb1bd-Ei3k-C0Aul3gfZvkU/view?usp=sharing'>resume</a>
+                    <a  rel="noopener noreferrer" target="_blank"href='https://drive.google.com/file/d/161rgq_r4vWuuG2Rr-5fd2K_tvBXoOoYe/view?usp=sharing'>resume</a>
                     <a className='nav-link' href="#contact" onClick={(e) => handleAnchorClick(e, 'contact')}>contact</a>
                 </div>
 
@@ -85,7 +85,7 @@ function Navbar() {
                             <a className='nav-link' onClick={(e) => handleAnchorClick(e, 'about')}>about</a>
                         </div>
                         <div className='nav-item-2 nav-web' >
-                            <a className='nav-link' href="#education" onClick={(e) => handleAnchorClick(e, 'education')} >education</a>
+                            <a className='nav-link' onClick={(e) => handleAnchorClick(e, 'education')} >education</a>
                         </div>
                         <div className='nav-item-3 nav-web' >
                             <a className='nav-link' onClick={(e) => handleAnchorClick(e, 'projects')}>projects</a>
@@ -93,10 +93,10 @@ function Navbar() {
                     </div>
                     <div className='right-menu'>
                         <div className='nav-item-4 nav-web' >
-                            <a className='nav-link' rel="noopener noreferrer" target="_blank"href='https://drive.google.com/file/d/1tPiDVhm55eb1bd-Ei3k-C0Aul3gfZvkU/view?usp=sharing'>resume</a>
+                            <a  rel="noopener noreferrer" target="_blank"href='https://drive.google.com/file/d/161rgq_r4vWuuG2Rr-5fd2K_tvBXoOoYe/view?usp=sharing'>resume</a>
                         </div>
                         <div className='nav-item-5 nav-web' >
-                            <a className='nav-link' href="#contact" onClick={(e) => handleAnchorClick(e, 'contact')}>contact</a>
+                            <a className='nav-link' onClick={(e) => handleAnchorClick(e, 'contact')}>contact</a>
                         </div>
                         <div className='nav-item-6 nav-web' >
                             <DarkMode></DarkMode>
