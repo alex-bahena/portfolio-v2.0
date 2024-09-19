@@ -1,15 +1,14 @@
 .education {
-    height: 50vh;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 15vh repeat(2, 1fr);
+    grid-template-rows: 15vh repeat(2, minmax(0, 1fr));
     gap: 1.8rem;
     text-align: center;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     background-color: var(--color-white);
-    padding: 0 var(--padding-2);
     padding-bottom: 4rem;
 }
 

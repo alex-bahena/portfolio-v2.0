@@ -1,8 +1,8 @@
 .about{
-    height: 50vh;
+    height: auto;
     display: grid;
     grid-template-columns: 60% 40%;
-    grid-template-rows: 15vh 1fr;
+    grid-template-rows: 15vh repeat(2, minmax(0, 1fr));
     gap: 1.8rem; 
     overflow: hidden;
     text-align: center;
@@ -14,13 +14,14 @@
 .about .about-me{
     grid-row-start: 1;
     grid-column: 1 / span 2;
+
 }
  
 .about .profile-photo{
     width: 30vw;
-    grid-row-start: 2;
     grid-column-start: 2;
-    align-self:self-start;
+    grid-row: 2 / span 3;
+    display: inline-block;
 }
 
 
@@ -33,7 +34,9 @@
 
 
 .about .about-description{
-    align-self:self-start;
+    grid-row: 2 / span 3;
+    grid-column: 1;
+    align-self: self-start;
 }
 
 .about .about-description p{
